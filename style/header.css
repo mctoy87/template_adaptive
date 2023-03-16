@@ -1,0 +1,182 @@
+
+
+.header_bcg-wrapper{
+    padding-top: 40px;
+    padding-bottom: 120px;
+    color:#ffffff;    
+    
+    background-image: url("../image/stag-office-mockup.png");
+    box-shadow: inset 1600px 0px rgba(47, 50, 75, 0.85);
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.header__top-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+.header__tel-wrap{
+    text-align: center;
+
+}
+
+.header__tel {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+
+.header__link {
+    font-size: 16px;
+    line-height: 19px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.header-banner {
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.header-banner__title {
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 61px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header-banner__text {
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.header-banner__btn {
+    min-width: 200px;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #ffffff;
+
+    background-color: #15A9CB;
+    box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+    border-radius: 50px;
+    border: none;
+}
+
+@media (max-width: 1280px) {
+.header__top-wrap {
+    margin: 0 30px 70px;
+
+}
+}
+
+@media (max-width: 1024px) {
+.header_bcg-wrapper{
+    padding-top: 26px;
+    padding-bottom: 70px;
+}
+
+.header__top-wrap {
+    margin: 0 30px 70px;
+
+}
+    
+.header__logo {
+    width: 60px;
+    height: 60px;
+}
+
+
+.header__tel {
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.header__link {
+    font-size: 16px;
+    line-height: 19px;
+}
+.header-banner__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 28px;
+}
+
+.header-banner__text {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 60px;
+}
+
+}
+
+
+@media (max-width: 320px) {
+.header_bcg-wrapper{
+    padding-top: 15px;
+    padding-bottom: 65px;
+}
+
+.header__top-wrap {
+    margin: 0 15px 65px;
+}
+
+.header__logo {
+    width: 30px;
+    height: 30px;
+}
+
+.header__tel, 
+.header__link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.header__tel-logo{
+display: block;
+background-image: url("../image/Phone.png");
+width: 24px;
+height: 24px;
+}
+
+.header-banner__title {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 23px;
+}
+
+.header-banner__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 54px;
+}
+
+.header-banner__btn{
+    min-width: 160px;
+    min-height: 38px;
+    font-size: 16px;
+    line-height: 19px;
+}
+}

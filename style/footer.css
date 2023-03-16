@@ -1,0 +1,138 @@
+.footer {
+color: #ffffff;
+}
+
+.footer__bcg-wrap{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background: #2F324B;
+}
+
+.footer__flex-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    min-height: 68px;
+    margin: 0 auto;
+}
+
+.footer__flex-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.footer__tel-wrap {
+    text-align: center;
+}
+
+.footer__tel {
+    display: block;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 3px;
+}
+
+.footer__link {
+    font-size: 16px;
+    line-height: 19px;
+    border-bottom: 1px solid #ffffff;
+}
+.footer__logo {
+    margin-right: 19px;
+}
+
+@media (max-width: 1280px) {
+    .footer__flex-wrap {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+
+    .footer__logo {
+        width: 60px;
+        height: 60px;
+    }
+    .footer__text--autor {
+        opacity: 0.5;
+    }
+
+    .footer__tel {
+        font-size: 21px;
+        line-height: 25px;
+    }
+
+    .footer__link {
+    font-size: 13px;
+    line-height: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    .footer__bcg-wrap{
+        padding-bottom: 0;
+    }
+    
+    .footer__flex-wrap {
+        flex-wrap: wrap;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .footer__text--autor {
+        order: 1;
+        margin: 0 auto;
+        flex-basis: 100%;
+        min-height: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #2A2C3F;
+
+    }
+}
+
+@media (max-width: 320px) {
+
+
+    .footer__logo {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .footer__tel, 
+    .footer__link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+    .footer__tel-logo{
+        display: block;
+        background-image: url("../image/Phone.png");
+        width: 24px;
+        height: 24px;
+        }
+
+    .footer-text--allrights{
+        font-size: 8px;
+        line-height: 11px;
+    }
+}
