@@ -1,15 +1,19 @@
 .advantages {
-    padding-top: 70px;
-    padding-bottom: 70px;
+
     color:#383A4C;
 }
 
+.advantages__bcg-wrap{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #F9F9F9;
+}
 .advantages__title {
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
 
 .advantages__about {
@@ -18,7 +22,8 @@
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    margin-bottom: 35px;
+    max-width: max-content;
+    margin: 0 auto 35px;
 }
 
 
@@ -28,7 +33,7 @@
     width: 43px;
     border-bottom: 2px solid #000000;
     top: 12px;
-    right: 42%;
+    right: 81px;
 }
 
 .advantages__about::after {
@@ -37,7 +42,7 @@
     width: 43px;
     border-bottom: 2px solid #000000;
     top: 12px;
-    left: 42%;
+    left: 79px;
 }
 
 .advantages__lead {
@@ -46,11 +51,12 @@
     text-align: center;
     font-size: 18px;
     line-height: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 57px;
 }
 
 .advantages__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     counter-reset: count 0;
@@ -79,7 +85,7 @@
     position: absolute;
     content: counter(count);
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -42%);
     font-weight: 500;
     font-size: 57px;
     line-height: 100%;
@@ -93,88 +99,117 @@
     text-align: center;
 }
 
-@media (max-width: 1024px){
-.advantages__title {
-    font-size: 32px;
-    line-height: 38px;
-}
+@media (max-width: 1084px){
+    .advantages__bcg-wrap{
+        padding-top: 71px;
+    }
 
-.advantages__about {
+    .advantages__title {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 24px;
+    }
+    
+    .advantages__about {
 
-    font-size: 20px;
-    line-height: 23px;
-}
+        font-size: 20px;
+        line-height: 23px;
 
-.advantages__about::before {
-    right: 35%;
-}
-.advantages__about::after {
-    left: 35%;
-}
-.advantages__lead {
-    font-size: 16px;
-    line-height: 23px;
-}
-
-.advantages__item{
-    flex-basis: 180px;
-}
-
-.advantages__number{
-    width: 104px;
-    height: 104px;
-}
-.advantages__number:after{
-    font-size: 52px;
-    line-height: 73px;
-}
-.advantages__text {
-    font-size: 18px;
-    line-height: 25px;
-}
+        max-width: max-content;
+        margin: 0 auto 30px;
+    }
+    
+    .advantages__about::before {
+        width: 40px;
+        top: 10px;
+        right: 74px;
+    }
+    .advantages__about::after {
+        width: 40px;
+        top: 10px;
+        left: 72px;
+    }
+    .advantages__lead {
+        max-width: 640px;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 59px;
+    }
+    
+    .advantages__item{
+        flex-basis: 180px;
+    }
+    
+    .advantages__number{
+        width: 104px;
+        height: 104px;
+        margin-bottom: 25px;
+    }
+    .advantages__number:after{
+        font-size: 52px;
+        line-height: 73px;
+        transform: translate(-54%, -48%);
+    }
+    .advantages__text {
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 
 @media (max-width: 768px){
-    .advantages__list {
+    /* .advantages__list {
         flex-wrap: wrap;
-    }
+    } */
 
     .advantages__item {
         flex-basis: calc(25% + 50px);
     }
 
-    .advantages__about::before {
-        right: 20%;
-    }
-    .advantages__about::after {
-        left: 20%;
-    }
-}
+@media (max-width: 380px){
 
-@media (max-width: 320px){
-    .advantages {
-        padding-top: 30px;
-        padding-bottom: 60px;
+    .advantages__bcg-wrap{
+        padding-top: 32px;
+        padding-bottom: 63px;
+        padding-right: 15px;
+        padding-left: 15px;
     }
-
     .advantages__title {
         font-size: 20px;
         line-height: 23px;
+        margin-bottom: 17px;
+    }
+
+    .advantages__about {
+        font-size: 16px;
+        line-height: 19px;
     }
     
     .advantages__about::before {
-        right: 15%;
+        top: 11px;
+        right: 67px;
+        width: 21px;
     }
     .advantages__about::after {
-        left: 15%;
+        top: 11px;
+        left: 68px;
+        width: 21px;
     }
     .advantages__lead {
         margin-bottom: 40px;
+        font-size: 12px;
+        line-height: 17px;
     }
     
     .advantages__list {
         flex-direction: column;
-        gap: 40px;
+        gap: 43px;
         counter-reset: count 0;
     }
+    .advantages__number {
+
     }
+
+    .advantages__text{
+        padding: 0 15px;
+    }
+}
