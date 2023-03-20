@@ -6,7 +6,7 @@
     color:#ffffff;    
     
     background-image: url("../image/stag-office-mockup.png");
-    box-shadow: inset 1600px 0px rgba(47, 50, 75, 0.85);
+    box-shadow: inset 1920px 0px rgba(47, 50, 75, 0.85);
     background-repeat: no-repeat;
     background-size: cover;    
 }
@@ -136,6 +136,11 @@
 
 }
 
+@media (min-width: 1024px){
+    .header {
+        padding: 0;
+    }
+}
 
 @media (max-width: 380px) {
     .header__bcg--wrapper{
