@@ -1,14 +1,15 @@
-
-
-.header__bcg--wrapper{
-    padding-top: 41px;
-    padding-bottom: 120px;
+.header {
     color:#ffffff;    
     
     background-image: url("../image/stag-office-mockup.png");
     box-shadow: inset 1920px 0px rgba(47, 50, 75, 0.85);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;       
+}
+
+.header__container{
+    padding: 41px 30px 120px;
+
 }
 
 .header__top-wrap {
@@ -94,7 +95,7 @@
 @media (max-width: 1084px) {
 
 
-    .header__bcg--wrapper{
+    .header__container{
         padding-top: 26px;
         padding-bottom: 70px;
     }
@@ -138,7 +139,7 @@
 
 
 @media (max-width: 380px) {
-    .header__bcg--wrapper{
+    .header__container{
         padding-top: 15px;
         padding-bottom: 65px;
         padding-right: 15px;

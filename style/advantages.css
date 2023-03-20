@@ -1,12 +1,11 @@
 .advantages {
-
+    background-color: #F9F9F9;
     color:#383A4C;
 }
 
 .advantages__bcg-wrap{
-    padding-top: 70px;
-    padding-bottom: 70px;
-    background-color: #F9F9F9;
+    padding: 70px 30px;
+
 }
 .advantages__title {
     font-weight: 700;

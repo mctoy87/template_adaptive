@@ -1,22 +1,25 @@
 .user-contacts {
-    
-    
-}
-
-.user-contacts__flex-wrap{
-    padding-top: 72px;
-    padding-bottom: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
     background-image: url("../image/user-contacts-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     box-shadow: inset 1600px 0px rgba(47, 50, 75, 0.85);
-    color: #FFFFFF;
+    color: #FFFFFF;    
+    
+}
+
+.container{
+    padding: 72px 30px 70px;
+}
+
+.user-contacts__flex-wrap{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
 }
 
 .user-contacts__title {
@@ -92,7 +95,7 @@
 }
 
 @media (max-width: 1084px) {
-    .user-contacts__flex-wrap{
+    .container{
         padding-bottom: 56px;
     }
 
@@ -137,7 +140,7 @@
 }
 
 @media (max-width: 380px) {
-    .user-contacts__flex-wrap{
+    .container{
         padding: 31px 15px 30px;
 
     }
